@@ -2,10 +2,5 @@ pandas
 streamlit
 numpy
 joblib
-MinMaxScaler
-train_test_split
-KNeighborsClassifier
-array
-GaussianNB
-tree
+scikit-learn
 altair
