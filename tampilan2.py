@@ -129,8 +129,10 @@ with modelling :
 with implementasi :
         # section output
     def submit3():
+        joblib.load("scaler.save")
+        X = scaler.transform([[ph, suhu, rasa, bau, lemak, kekeruhan, warna]])
         # input
-        inputs = np.array([[ph, suhu, rasa, bau, lemak, kekeruhan, warna]])
+        inputs = np.array(X)
         st.subheader("Data yang Anda Inputkan :")
         st.write(inputs)
 
